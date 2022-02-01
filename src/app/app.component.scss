@@ -1,0 +1,62 @@
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image3 {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 70px;
+}
+.image1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 70px;
+  animation: animate 1s linear;
+}
+.image2in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 70px;
+  animation: fadein 1s;
+}
+
+.image2out {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 70px;
+  animation: fadeout 4s;
+}
+
+@keyframes animate {
+  0% {
+      transform:
+        rotateY(270deg);
+  }
+
+}
+
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+
+
+
+
+
+
